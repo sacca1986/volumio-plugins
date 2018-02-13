@@ -160,6 +160,24 @@
 						}
 					],
 					"updated": "13-2-2018"
+				},
+				{
+					"prettyName": "Auto Standby AMP",
+					"icon": "fa-lightbulb-o",
+					"name": "autostandbyamp",
+					"version": "0.1.0",
+					"url": "http://volumio.github.io/volumio-plugins/plugins/volumio/armhf/miscellanea/autostandbyamp/autostandbyamp.zip",
+					"license": "ISC",
+					"description": "Status based power management of external amplifier",
+					"details": "this plugin control the Auna Amplifier standby according the status of Volumio.",
+					"author": "Matteo Sacchetti",
+					"screenshots": [
+						{
+							"image": "",
+							"thumb": ""
+						}
+					],
+					"updated": "13-2-2018"
 				}
 			]
 		},
