@@ -1,0 +1,6 @@
+{
+    "ircommand":{
+        "type": "string" ,
+        "value": "irsend SEND_ONCE AUNA-amp KEY_POWER"
+    }
+}

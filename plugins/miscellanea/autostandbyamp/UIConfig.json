@@ -1,0 +1,30 @@
+{
+    "page": {
+        "label": "IR Command Setting"
+    },
+    "sections": [
+                 {
+                 "id": "ircommand",
+                 "element": "section",
+                 "label": "IR Command",
+                 "icon": "fa-plug",
+                 "onSave": {"type":"controller", "endpoint":"miscellanea/autostandbyamp", "method":"saveOptions"},
+                 "saveButton": {
+                 "label": "SAVE",
+                 "data": [
+                          "ircommand"
+                          ]
+                 },
+                 "content": [
+                             {
+				 	"id":"ircommand",
+				 	"type":"string",
+				 	"element": "input",
+				 	"doc": "Gpio pin Speaker2",
+				 	"label": "IR Command:",
+				 	"value": ""
+                 }
+                             ]
+                 }
+                 ]
+}

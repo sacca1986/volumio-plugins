@@ -1,0 +1,8 @@
+#!/bin/bash
+
+sed '#### Lirc ####,+1 d' /boot/config2.txt
+sed 'dtoverlay=lirc-rpi,gpio_out_pin=16,gpio_in_pin=12,+1 d' /boot/config2.txt
+
+/boot/config.txt
+
+echo "Done"
