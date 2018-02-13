@@ -1,0 +1,31 @@
+{
+    "speaker1_setting":{
+        "type": "boolean" ,
+        "value": true
+    },
+    "speaker2_setting":{
+        "type": "boolean" ,
+        "value": true
+    },
+
+    "powerac":{
+        "type": "boolean",
+        "value": false
+    },
+    "gpio_speaker1":{
+        "type": "number",
+        "value": 5
+    },
+    "gpio_speaker2":{
+        "type": "number",
+        "value": 6
+    },
+    "gpio_powerac":{
+        "type": "number",
+        "value": 13
+    },
+     "volume_setting":{
+        "type": "number",
+        "value": 0
+    }
+}

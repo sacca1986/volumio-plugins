@@ -1,0 +1,137 @@
+{
+    "page": {
+        "label": "TRANSLATE.AUNACONTROL_TITLE"
+    },
+    "sections": [
+                 {
+                 "id": "Speakers",
+                 "element": "section",
+                 "label": "TRANSLATE.SPEAKER_SETTINGS",
+                 "icon": "fa-volume-up",
+                 "onSave": {"type":"controller", "endpoint":"miscellanea/aunacontrol", "method":"saveOptionsSpeakers"},
+                 "saveButton": {
+                 "label": "TRANSLATE.SAVE",
+                 "data": [
+                          "speaker1_setting",
+                          "speaker2_setting"
+                          ]
+                 },
+                 "content": [
+                                                         {
+                             "id": "speaker1_setting",
+                             "element": "switch",
+                             "label": "TRANSLATE.SPEAKER1",
+                             "doc": "TRANSLATE.SPEAKER1_DOC",
+                             "value": true
+                             },
+                               {
+                             "id": "speaker2_setting",
+                             "element": "switch",
+                             "label": "TRANSLATE.SPEAKER2",
+                             "doc": "TRANSLATE.SPEAKER2_DOC",
+                             "value": true
+                             }
+                             ]
+                 },
+                 
+                 {
+                 "id": "PowerACamp",
+                 "element": "section",
+                 "label": "TRANSLATE.POWERAC",
+                 "icon": "fa-plug",
+                 "onSave": {"type":"controller", "endpoint":"miscellanea/aunacontrol", "method":"saveOptionsPowerAC"},
+                 "saveButton": {
+                 "label": "TRANSLATE.SAVE",
+                 "data": [
+	                 "powerac"
+	              ]
+                 },
+                 "content": [
+				 {
+				 	"id":"powerac",
+				 	"element": "switch",
+				 	"doc": "Power AUNA amp",
+				 	"label": "TRANSLATE.POWERAUNA",
+				 	"value": false
+                 }
+                 ]
+},
+{
+                 "id": "gpio",
+                 "element": "section",
+                 "label": "TRANSLATE.GPIO",
+                 "icon": "fa-microchip",
+                 "onSave": {"type":"controller", "endpoint":"miscellanea/aunacontrol", "method":"saveOptionsGpio"},
+                 "saveButton": {
+                 "label": "TRANSLATE.SAVE",
+                 "data": [
+	                 "gpio_speaker1",
+	                 "gpio_speaker2",
+	                 "gpio_powerac"
+	              ]
+                 },
+                 "content": [
+				 {
+				 	"id":"gpio_speaker1",
+				 	"type":"number",
+				 	"element": "input",
+				 	"doc": "Gpio pin Speaker1",
+				 	"label": "TRANSLATE.GPIOSPEAKER1",
+				 	"value": 5
+                 },
+                 {
+				 	"id":"gpio_speaker2",
+				 	"type":"number",
+				 	"element": "input",
+				 	"doc": "Gpio pin Speaker2",
+				 	"label": "TRANSLATE.GPIOSPEAKER2",
+				 	"value": 6
+                 },
+                 {
+				 	"id":"gpio_powerac",
+				 	"type":"number",
+				 	"element": "input",
+				 	"doc": "Gpio pin PowerAC",
+				 	"label": "TRANSLATE.GPIOPOWERAC",
+				 	"value": 13
+                 }
+
+
+                 ]
+},
+{
+                 "id": "volume",
+                 "element": "section",
+                 "label": "TRANSLATE.VOLUME",
+                 "icon": "fa-volume-up",
+                 "onSave": {"type":"controller", "endpoint":"miscellanea/aunacontrol", "method":"saveOptionsVolume"},
+                 "saveButton": {
+                 "label": "TRANSLATE.SAVE",
+                 "data": [
+	                 "volume_setting"
+	              ]
+                 },
+                 "content": [
+				 {
+					"id": "volume_setting",
+					"element": "equalizer",
+					"label": "TRANSLATE.VOLUMELEVEL",
+					"doc": "TRANSLATE.VOLUME_DOC",
+					"config": {
+						"orientation": "horizontal",
+						"bars": [
+							{
+								"min": 0,
+								"max": 100,
+								"step": 5,
+								"value": 0,
+								"tooltip": "show"
+							}
+							]
+                 			   }
+                  }
+                 ]
+}
+
+                 ]
+}

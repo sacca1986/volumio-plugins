@@ -1,0 +1,18 @@
+{
+  "AUNACONTROL_TITLE":"AUNA Control Settings",
+  "SPEAKER_SETTINGS":"Speaker Settings",
+  "SPEAKER1": "Speaker 1",
+  "SPEAKER1_DOC": "Save first the gpio settings Speaker1_gpio",
+  "SPEAKER2": "Speaker 2",
+  "SPEAKER2_DOC": "Save first the gpio settings Speaker2_gpio",
+  "GPIO":"GPIO Settings",
+  "POWERAC":"Power AC Setting",
+  "POWERAUNA":"AMP Power",
+  "GPIOSPEAKER1":"GPIO Speaker 1:",
+  "GPIOSPEAKER2":"GPIO Speaker 2:",
+  "GPIOPOWERAC":"GPIO PowerAC:",
+  "VOLUME":"Volume",
+  "VOLUMELEVEL":"Level:",
+  "VOLUME_DOC":"The volume is changed only if the amplifier is powerd on and not in standby",
+  "SAVE":"Save"
+}

@@ -1,0 +1,214 @@
+#!/bin/sh
+
+CallBash=$1
+AmpStatus=$2
+
+if [ $AmpStatus -eq 0 ]; then
+
+irsend SEND_ONCE AUNA-amp KEY_POWER
+sleep 1
+fi
+
+#volume to 0
+irsend SEND_START AUNA-amp KEY_VOLUMEDOWN; sleep 7; irsend SEND_STOP AUNA-amp KEY_VOLUMEDOWN
+sleep 1
+if [ $CallBash -gt 0 ] && [ $CallBash -lt 5 ]; then
+
+COUNTER=0
+         while [  $COUNTER -lt 3 ]; do
+             echo The counter is $COUNTER
+		   irsend SEND_ONCE AUNA-amp KEY_VOLUMEUP
+              COUNTER=`expr $COUNTER + 1`
+         done
+fi
+
+if [ $CallBash -ge 5 ] && [ $CallBash -lt 10 ]; then
+
+COUNTER=0
+         while [  $COUNTER -lt 5 ]; do
+             echo The counter is $COUNTER
+		   irsend SEND_ONCE AUNA-amp KEY_VOLUMEUP
+             COUNTER=`expr $COUNTER + 1`
+         done
+fi
+
+if [ $CallBash -ge 10 ] && [ $CallBash -lt 15 ]; then
+
+COUNTER=0
+         while [  $COUNTER -lt 8 ]; do
+             echo The counter is $COUNTER
+			 irsend SEND_ONCE AUNA-amp KEY_VOLUMEUP
+             COUNTER=`expr $COUNTER + 1` 
+         done
+fi
+
+if [ $CallBash -ge 15 ] && [ $CallBash -lt 20 ]; then
+
+COUNTER=0
+         while [  $COUNTER -lt 11 ]; do
+             echo The counter is $COUNTER
+			 irsend SEND_ONCE AUNA-amp KEY_VOLUMEUP
+             COUNTER=`expr $COUNTER + 1` 
+         done
+fi
+
+if [ $CallBash -ge 20 ] && [ $CallBash -lt 25 ]; then
+
+COUNTER=0
+         while [  $COUNTER -lt 13 ]; do
+             echo The counter is $COUNTER
+			 irsend SEND_ONCE AUNA-amp KEY_VOLUMEUP
+             COUNTER=`expr $COUNTER + 1` 
+         done
+fi
+
+#Volume at 25%
+if [ $CallBash -ge 25 ] && [ $CallBash -lt 30 ]; then
+
+COUNTER=0
+         while [  $COUNTER -lt 16 ]; do
+             echo The counter is $COUNTER
+			 irsend SEND_ONCE AUNA-amp KEY_VOLUMEUP
+             COUNTER=`expr $COUNTER + 1` 
+         done
+fi
+
+if [ $CallBash -ge 30 ] && [ $CallBash -lt 35 ]; then
+
+COUNTER=0
+         while [  $COUNTER -lt 19 ]; do
+             echo The counter is $COUNTER
+			 irsend SEND_ONCE AUNA-amp KEY_VOLUMEUP
+             COUNTER=`expr $COUNTER + 1` 
+         done
+fi
+
+if [ $CallBash -ge 40 ] && [ $CallBash -lt 45 ]; then
+
+COUNTER=0
+         while [  $COUNTER -lt 22 ]; do
+             echo The counter is $COUNTER
+			 irsend SEND_ONCE AUNA-amp KEY_VOLUMEUP
+             COUNTER=`expr $COUNTER + 1` 
+         done
+fi
+
+if [ $CallBash -ge 45 ] && [ $CallBash -lt 50 ]; then
+
+COUNTER=0
+         while [  $COUNTER -lt 25 ]; do
+             echo The counter is $COUNTER
+			 irsend SEND_ONCE AUNA-amp KEY_VOLUMEUP
+             COUNTER=`expr $COUNTER + 1` 
+         done
+fi
+
+#Volume at 50%
+if [ $CallBash -ge 50 ] && [ $CallBash -lt 55 ]; then
+
+COUNTER=0
+         while [  $COUNTER -lt 28 ]; do
+             echo The counter is $COUNTER
+			 irsend SEND_ONCE AUNA-amp KEY_VOLUMEUP
+             COUNTER=`expr $COUNTER + 1` 
+         done
+fi
+
+if [ $CallBash -ge 55 ] && [ $CallBash -lt 60 ]; then
+
+COUNTER=0
+         while [  $COUNTER -lt 30 ]; do
+             echo The counter is $COUNTER
+			 irsend SEND_ONCE AUNA-amp KEY_VOLUMEUP
+             COUNTER=`expr $COUNTER + 1` 
+         done
+fi
+
+if [ $CallBash -ge 60 ] && [ $CallBash -lt 65 ]; then
+
+COUNTER=0
+         while [  $COUNTER -lt 33 ]; do
+             echo The counter is $COUNTER
+			 irsend SEND_ONCE AUNA-amp KEY_VOLUMEUP
+             COUNTER=`expr $COUNTER + 1` 
+         done
+fi
+
+if [ $CallBash -ge 65 ] && [ $CallBash -lt 70 ]; then
+
+COUNTER=0
+         while [  $COUNTER -lt 36 ]; do
+             echo The counter is $COUNTER
+			 irsend SEND_ONCE AUNA-amp KEY_VOLUMEUP
+             COUNTER=`expr $COUNTER + 1` 
+         done
+fi
+
+if [ $CallBash -ge 70 ] && [ $CallBash -lt 75 ]; then
+
+COUNTER=0
+         while [  $COUNTER -lt 39 ]; do
+             echo The counter is $COUNTER
+			 irsend SEND_ONCE AUNA-amp KEY_VOLUMEUP
+             COUNTER=`expr $COUNTER + 1` 
+         done
+fi
+
+# Volume at 75%
+if [ $CallBash -ge 75 ] && [ $CallBash -lt 80 ]; then
+
+COUNTER=0
+         while [  $COUNTER -lt 41 ]; do
+             echo The counter is $COUNTER
+			 irsend SEND_ONCE AUNA-amp KEY_VOLUMEUP
+             COUNTER=`expr $COUNTER + 1` 
+         done
+fi
+
+if [ $CallBash -ge 80 ] && [ $CallBash -lt 85 ]; then
+
+COUNTER=0
+         while [  $COUNTER -lt 44 ]; do
+             echo The counter is $COUNTER
+			 irsend SEND_ONCE AUNA-amp KEY_VOLUMEUP
+             COUNTER=`expr $COUNTER + 1` 
+         done
+fi
+
+if [ $CallBash -ge 85 ] && [ $CallBash -lt 90 ]; then
+
+COUNTER=0
+         while [  $COUNTER -lt 47 ]; do
+             echo The counter is $COUNTER
+			 irsend SEND_ONCE AUNA-amp KEY_VOLUMEUP
+             COUNTER=`expr $COUNTER + 1` 
+         done
+fi
+
+if [ $CallBash -ge 90 ] && [ $CallBash -lt 95 ]; then
+
+COUNTER=0
+         while [  $COUNTER -lt 50 ]; do
+             echo The counter is $COUNTER
+			 irsend SEND_ONCE AUNA-amp KEY_VOLUMEUP
+             COUNTER=`expr $COUNTER + 1` 
+         done
+fi
+
+#Volume at 100%
+if [ $CallBash -ge 95 ] && [ $CallBash -le 100 ]; then
+
+COUNTER=0
+         while [  $COUNTER -lt 52 ]; do
+             echo The counter is $COUNTER
+			 irsend SEND_ONCE AUNA-amp KEY_VOLUMEUP
+             COUNTER=`expr $COUNTER + 1` 
+         done
+fi
+
+
+if [ $AmpStatus -eq 0 ]; then
+sleep 1
+irsend SEND_ONCE AUNA-amp KEY_POWER
+
+fi
